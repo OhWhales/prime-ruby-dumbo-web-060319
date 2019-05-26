@@ -1,9 +1,9 @@
 # Add  code here!
 
 def prime?(arg)
-    if (arg == 2 || arg == 3)
-        puts "true"
-        return true 
+  if (arg == 2 || arg == 3)
+       puts "true"
+       return true 
     end 
     
     bool = true 
