@@ -1,6 +1,10 @@
 # Add  code here!
 
 def prime?(arg)
+    if (arg < 0)
+      puts "false"
+      return false 
+    end
     if (arg == 2 || arg == 3)
         puts "true"
         return true 
