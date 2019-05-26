@@ -1,7 +1,7 @@
 # Add  code here!
 
 def prime?(arg)
-    if (arg < 0)
+    if (arg < 0 || arg == 0)
       puts "false"
       return false 
     end
