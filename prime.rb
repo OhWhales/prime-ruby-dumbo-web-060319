@@ -1,12 +1,30 @@
 # Add  code here!
 
 def prime?(arg)
-  range = (2..arg)
-  newArray= range.to_a 
-  counter = 0 
-  bool = true 
-  while (counter < newArray.size)
-    counter = 2 
+    if (arg == 2 || arg == 3)
+        puts "true"
+        return true 
+    end 
     
-    counter = counter  + 1 
+    bool = true 
+    newArray= (2..arg).to_a
+    counter = 0
+
+    while ( counter < newArray.size)
+        if counter == newArray.size - 1
+            break 
+        end 
+        if arg % newArray[counter] == 0 
+            puts "false"
+            bool = false
+            return bool 
+        end 
+        counter = counter +1 
+    end 
+
+    puts "true"
+    return true 
+
+
+
 end 
